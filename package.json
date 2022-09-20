@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/TonyQ032/Social-Network-API#readme",
   "dependencies": {
-    "moment": "^2.29.4"
+    "express": "^4.18.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.1"
   }
 }
