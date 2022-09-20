@@ -36,6 +36,11 @@ const userSchema = new Schema({
 );
 
 // Initialize our model
-const User = model("user", userSchema);
+const User = model("User", userSchema);
+
+// Gets count of comments and replies
+userSchema.virtual("friendCount").get(function() {
+  return this.friends.length;
+});
 
 module.exports = User;
