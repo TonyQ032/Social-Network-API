@@ -50,6 +50,40 @@ module.exports = {
       })
   },
 
+  // Update Thought by ID
+  updateThought(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.id },
+      req.body,
+      { new: true, runValidators: true }
+    )
+      .then(data => {
+        if (!data) {
+          res.status(404).json({ message: 'No thought found with this id!' });
+        }
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(500).json(err)
+      })
+  },
+
+  // Delete Thought by ID
+  deleteThought(req, res) {
+    Thought.findOneAndDelete(
+      { _id: req.params.id }
+    )
+      .then(data => {
+        if (!data) {
+          res.status(404).json({ message: 'No thought found with this id!' });
+        }
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(500).json(err)
+      })
+  },
+
   // Add reaction
   addReaction(req, res) {
     Thought.findOneAndUpdate(
@@ -79,4 +113,5 @@ module.exports = {
       { new: true }
     )
   }
+
 };
