@@ -29,7 +29,7 @@ module.exports = {
       })
   },
 
-  // Create Thought (userId is required in parameters)
+  // Create Thought
   createThought({ params, body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
@@ -51,7 +51,7 @@ module.exports = {
   },
 
   // Update Thought by ID
-  updateThought(req, res) {
+  updateThoughtById(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.id },
       req.body,
@@ -106,12 +106,12 @@ module.exports = {
   deleteReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      {
-        $pull:
-          { reactions: { reactionId: req.params.reactionId } }
-      },
+      { $pull: { reactions: { reactionId: req.params.reactionId } } },
       { new: true }
     )
+      .then(data => res.json(data))
+      .catch((err) => {
+        res.status(500).json(err)
+      })
   }
-
 };
