@@ -4,10 +4,6 @@ module.exports = {
   // Get ALL users
   getAllUsers(req, res) {
     User.find()
-      .populate({
-        path: "thoughts",
-        select: "-__v"
-      })
       .select("-__v")
       .then(data => res.json(data))
       .catch((err) => {
