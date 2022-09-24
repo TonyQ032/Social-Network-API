@@ -46,7 +46,7 @@ Below are various screenshots of the website:
 
 ## Demonstration
 
-A video demonstration of all the HTTP routes and requests can be accessed by clicking [here].(https://drive.google.com/file/d/1ccHM2lLSTu8I6NJQHosgy9FS_IAcPvXq/view).
+A video demonstration of all the HTTP routes and requests can be accessed by clicking [here](https://drive.google.com/file/d/1ccHM2lLSTu8I6NJQHosgy9FS_IAcPvXq/view).
 
 
 ## License
