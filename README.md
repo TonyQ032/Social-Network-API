@@ -41,7 +41,19 @@ Below is a list of all the technologies we utilized in order to build this proje
 
 ## Screenshots
 
-Below are various screenshots of the website:
+Below are various screenshots of the project running in Insomnia:
+
+Getting all Users:
+![Screenshot of all Users retrieved](./assets/get-all-users.png)
+
+Creating a User:
+![Screenshot of creating a new user](./assets/create-user.png)
+
+Getting all Thoughts:
+![Screenshot of all Thoughts retrieved](./assets/get-all-thoughts.png)
+
+Adding a Reaction:
+![Screenshot of adding a reaction](./assets/add-reactions.png)
 
 
 ## Demonstration
