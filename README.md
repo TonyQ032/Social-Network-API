@@ -71,6 +71,9 @@ This project falls under the following license:
 If you have any questions or comments, please feel free to contact me below: 
 
 ### Anthony Quinones
+
 Github: [TonyQ032](https://github.com/TonyQ032) 
+
+LinkedIn: [Anthony Quinones](https://www.linkedin.com/in/anthony-quinones/)
 
 Email: anthonyq032@gmail.com
